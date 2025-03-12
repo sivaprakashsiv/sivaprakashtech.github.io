@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engineering & Construction Solutions</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#FF6B00',
+secondary: '#1F2937'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.video-overlay {
+background: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+opacity: 0;
+transform: translateY(20px);
+animation: fadeInUp 1s ease forwards;
+}
+@keyframes fadeInUp {
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+</style>
+</head>
+<body class="min-h-screen bg-white">
+<header class="fixed w-full z-50 bg-white/90 backdrop-blur-sm">
+<nav class="container mx-auto px-6 py-4">
+<div class="flex items-center justify-between">
+<a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
+<div class="hidden md:flex items-center space-x-8">
+<a href="#" class="text-secondary hover:text-primary transition-colors">Home</a>
+<a href="#" class="text-secondary hover:text-primary transition-colors">Services</a>
+<a href="#" class="text-secondary hover:text-primary transition-colors">Projects</a>
+<a href="#" class="text-secondary hover:text-primary transition-colors">About</a>
+<a href="#" class="text-secondary hover:text-primary transition-colors">Contact</a>
+</div>
+<button class="md:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-2xl"></i>
+</button>
+</div>
+</nav>
+</header>
+<section class="relative h-screen w-full overflow-hidden">
+<video class="absolute inset-0 w-full h-full object-cover" autoplay loop muted playsinline>
+<source src="https://e-construct.in/wp-content/uploads/2022/03/banner-video-1.mp4" type="video/mp4">
+</video>
+<div class="video-overlay absolute inset-0"></div>
+<div class="relative h-full flex items-center justify-center">
+<div class="hero-content text-center px-6">
+<h1 class="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+Design | Build | Deliver<br>
+<span class="block mt-4">Elevate Engineering & Construction Solutions</span>
+</h1>
+<button class="!rounded-button bg-primary text-white px-8 py-4 text-lg font-semibold hover:bg-primary/90 transition-colors cursor-pointer whitespace-nowrap">
+Know More
+</button>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="text-center p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 mx-auto mb-6 text-primary flex items-center justify-center">
+<i class="ri-pencil-ruler-2-line text-4xl"></i>
+</div>
+<h3 class="text-2xl font-bold mb-4">Design</h3>
+<p class="text-gray-600">Innovative architectural and engineering design solutions tailored to your needs.</p>
+</div>
+<div class="text-center p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 mx-auto mb-6 text-primary flex items-center justify-center">
+<i class="ri-building-line text-4xl"></i>
+</div>
+<h3 class="text-2xl font-bold mb-4">Build</h3>
+<p class="text-gray-600">Expert construction management and execution with precision and quality.</p>
+</div>
+<div class="text-center p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 mx-auto mb-6 text-primary flex items-center justify-center">
+<i class="ri-shake-hands-line text-4xl"></i>
+</div>
+<h3 class="text-2xl font-bold mb-4">Deliver</h3>
+<p class="text-gray-600">Timely project completion and handover with complete client satisfaction.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl font-bold text-center mb-16">Company Profile</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<h3 class="text-3xl font-semibold">Design & Build With Your Dream Home With Econstruct As Per Vasthu.</h3>
+<p class="text-gray-600 leading-relaxed">We specialize in creating homes that perfectly blend modern architecture with traditional Vasthu principles. Our expert team ensures that every aspect of your dream home is designed and built to promote harmony, prosperity, and positive energy flow.</p>
+<div class="flex flex-wrap gap-6">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full">
+<i class="ri-home-smile-line text-2xl text-primary"></i>
+</div>
+<span class="font-semibold">500+ Projects</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full">
+<i class="ri-user-smile-line text-2xl text-primary"></i>
+</div>
+<span class="font-semibold">1000+ Clients</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full">
+<i class="ri-award-line text-2xl text-primary"></i>
+</div>
+<span class="font-semibold">15+ Years</span>
+</div>
+</div>
+<button onclick="openBrochure()" class="mt-8 !rounded-button bg-primary text-white px-8 py-4 text-lg font-semibold hover:bg-primary/90 transition-colors cursor-pointer whitespace-nowrap flex items-center gap-2">
+<i class="ri-book-open-line"></i>
+View Company Brochure
+</button>
+</div>
+<div class="relative">
+<img src="https://public.readdy.ai/ai/img_res/9880ef56fd906b50f1d31b18dbb3e0de.jpg"
+alt="Company Office"
+class="rounded-lg shadow-xl w-full h-[400px] object-cover object-top">
+</div>
+</div>
+</div>
+<div id="brochureModal" class="fixed inset-0 bg-black/50 z-50 hidden">
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg w-[90vw] h-[90vh] p-4">
+<button onclick="closeBrochure()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+<i class="ri-close-line text-2xl"></i>
+</button>
+<div class="flex flex-col h-full">
+<div class="flex space-x-4 mb-4">
+<button onclick="switchBrochure('company')" class="!rounded-button bg-primary text-white px-4 py-2 text-sm font-semibold hover:bg-primary/90 transition-colors">Company Profile</button>
+<button onclick="switchBrochure('residential')" class="!rounded-button bg-secondary text-white px-4 py-2 text-sm font-semibold hover:bg-secondary/90 transition-colors">Residential Projects</button>
+<button onclick="switchBrochure('commercial')" class="!rounded-button bg-secondary text-white px-4 py-2 text-sm font-semibold hover:bg-secondary/90 transition-colors">Commercial Projects</button>
+</div>
+<div class="flex-1 relative">
+<iframe id="companyBrochure" src="https://e-construct.in/#flipbook-df_9201/1/" class="w-full h-full absolute"></iframe>
+<iframe id="residentialBrochure" src="https://e-construct.in/#flipbook-df_9202/1/" class="w-full h-full absolute hidden"></iframe>
+<iframe id="commercialBrochure" src="https://e-construct.in/#flipbook-df_9203/1/" class="w-full h-full absolute hidden"></iframe>
+</div>
+</div>
+</div>
+</div>
+<script>
+function openBrochure() {
+document.getElementById('brochureModal').classList.remove('hidden');
+document.body.style.overflow = 'hidden';
+}
+function closeBrochure() {
+document.getElementById('brochureModal').classList.add('hidden');
+document.body.style.overflow = 'auto';
+}
+function switchBrochure(type) {
+const brochures = ['company', 'residential', 'commercial'];
+brochures.forEach(b => {
+document.getElementById(`${b}Brochure`).classList.add('hidden');
+});
+document.getElementById(`${type}Brochure`).classList.remove('hidden');
+const buttons = document.querySelectorAll('#brochureModal button:not([onclick*="closeBrochure"])');
+buttons.forEach(button => {
+if(button.getAttribute('onclick').includes(type)) {
+button.classList.remove('bg-secondary');
+button.classList.add('bg-primary');
+} else {
+button.classList.remove('bg-primary');
+button.classList.add('bg-secondary');
+}
+});
+}
+</script>
+</section>
+<section class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl font-bold text-center mb-16">Our Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<img src="https://public.readdy.ai/ai/img_res/c10d6d84cad1fff1259dec50492b3a7c.jpg"
+alt="Architectural Consultancy"
+class="w-full h-[300px] object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex flex-col justify-end transform translate-y-6 group-hover:translate-y-0 transition-transform">
+<h3 class="text-2xl font-bold text-white mb-2">Architectural Consultancy</h3>
+<p class="text-white/90 text-sm transform opacity-0 group-hover:opacity-100 transition-opacity">A professional team of architects, engineers and designers creating innovative building design solutions.</p>
+<a href="#" class="inline-flex items-center text-primary mt-4 font-semibold group-hover:underline">
+Learn more
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<img src="https://public.readdy.ai/ai/img_res/098b79f09800375421d8e73cc0e4c410.jpg"
+alt="Structural Design Consultancy"
+class="w-full h-[300px] object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex flex-col justify-end transform translate-y-6 group-hover:translate-y-0 transition-transform">
+<h3 class="text-2xl font-bold text-white mb-2">Structural Design Consultancy</h3>
+<p class="text-white/90 text-sm transform opacity-0 group-hover:opacity-100 transition-opacity">Designing and evaluating structural performance of your designs. Our main area of focus includes RCC, Steel and PSC projects.</p>
+<a href="#" class="inline-flex items-center text-primary mt-4 font-semibold group-hover:underline">
+Learn more
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<img src="https://public.readdy.ai/ai/img_res/f09394e769ca07ccf110eb00a0e72549.jpg"
+alt="Building Information Modelling"
+class="w-full h-[300px] object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex flex-col justify-end transform translate-y-6 group-hover:translate-y-0 transition-transform">
+<h3 class="text-2xl font-bold text-white mb-2">Building Information Modelling</h3>
+<p class="text-white/90 text-sm transform opacity-0 group-hover:opacity-100 transition-opacity">We build BIM models for greater visibility, better decision-making, more sustainable options, and cost-savings on your infrastructure projects.</p>
+<a href="#" class="inline-flex items-center text-primary mt-4 font-semibold group-hover:underline">
+Learn more
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<img src="https://public.readdy.ai/ai/img_res/8d2c935809967ceeafde5a163c53f4d7.jpg"
+alt="Project Management Consultancy"
+class="w-full h-[300px] object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex flex-col justify-end transform translate-y-6 group-hover:translate-y-0 transition-transform">
+<h3 class="text-2xl font-bold text-white mb-2">Project Management Consultancy</h3>
+<p class="text-white/90 text-sm transform opacity-0 group-hover:opacity-100 transition-opacity">Expert project management services including scheduling, cost budgeting, risk identification, monitoring & controlling for optimal project delivery.</p>
+<a href="#" class="inline-flex items-center text-primary mt-4 font-semibold group-hover:underline">
+Learn more
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<img src="https://public.readdy.ai/ai/img_res/f25f7a887f666648db8e5ec402255678.jpg"
+alt="IT Services"
+class="w-full h-[300px] object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex flex-col justify-end transform translate-y-6 group-hover:translate-y-0 transition-transform">
+<h3 class="text-2xl font-bold text-white mb-2">IT Services</h3>
+<p class="text-white/90 text-sm transform opacity-0 group-hover:opacity-100 transition-opacity">Comprehensive IT solutions including software development, network infrastructure, and digital transformation services.</p>
+<a href="#" class="inline-flex items-center text-primary mt-4 font-semibold group-hover:underline">
+Learn more
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<img src="https://public.readdy.ai/ai/img_res/3af1f7885452fc0a02ef6c0347ffd132.jpg"
+alt="Luxury Villa Design"
+class="w-full h-[300px] object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex flex-col justify-end transform translate-y-6 group-hover:translate-y-0 transition-transform">
+<h3 class="text-2xl font-bold text-white mb-2">Luxury Villa Design</h3>
+<p class="text-white/90 text-sm transform opacity-0 group-hover:opacity-100 transition-opacity">Exclusive luxury villa design services combining elegant architecture with modern amenities for discerning clients.</p>
+<a href="#" class="inline-flex items-center text-primary mt-4 font-semibold group-hover:underline">
+Learn more
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<img src="https://public.readdy.ai/ai/img_res/3876ca975d16a135d19e3d4d69b39982.jpg"
+alt="Corporate ON-JOB Training"
+class="w-full h-[300px] object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex flex-col justify-end transform translate-y-6 group-hover:translate-y-0 transition-transform">
+<h3 class="text-2xl font-bold text-white mb-2">Corporate ON-JOB Training</h3>
+<p class="text-white/90 text-sm transform opacity-0 group-hover:opacity-100 transition-opacity">Practical on-the-job training programs designed to enhance professional skills and industry knowledge.</p>
+<a href="#" class="inline-flex items-center text-primary mt-4 font-semibold group-hover:underline">
+Learn more
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<img src="https://public.readdy.ai/ai/img_res/d2cadd4738bdc418aaa4802715ca3910.jpg"
+alt="Media Services"
+class="w-full h-[300px] object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex flex-col justify-end transform translate-y-6 group-hover:translate-y-0 transition-transform">
+<h3 class="text-2xl font-bold text-white mb-2">Media Services</h3>
+<p class="text-white/90 text-sm transform opacity-0 group-hover:opacity-100 transition-opacity">Professional media production including video creation, editing, and digital content development.</p>
+<a href="#" class="inline-flex items-center text-primary mt-4 font-semibold group-hover:underline">
+Learn more
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl font-bold text-center mb-4">Projects</h2>
+<p class="text-xl text-gray-600 text-center mb-16">Latest</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<img src="https://public.readdy.ai/ai/img_res/f81209d8a9c89cd8180e335e2f1f8f7d.jpg"
+alt="KALPATARU Park Riviera"
+class="w-full h-[500px] object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex flex-col justify-end transform translate-y-6 group-hover:translate-y-0 transition-transform">
+<h3 class="text-2xl font-bold text-white mb-2">KALPATARU Park Riviera</h3>
+<p class="text-white/90 text-sm transform opacity-0 group-hover:opacity-100 transition-opacity">Luxury residential complex featuring modern amenities and stunning riverside views.</p>
+<button onclick="viewProject('kalpataru')" class="!rounded-button bg-primary text-white px-6 py-2 mt-4 inline-flex items-center gap-2 text-sm font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">
+View Project
+<i class="ri-arrow-right-line"></i>
+</button>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<img src="https://public.readdy.ai/ai/img_res/6930145ccf1d206b64c5f23f463180c2.jpg"
+alt="Sonali Residential"
+class="w-full h-[500px] object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex flex-col justify-end transform translate-y-6 group-hover:translate-y-0 transition-transform">
+<h3 class="text-2xl font-bold text-white mb-2">Sonali Residential</h3>
+<p class="text-white/90 text-sm transform opacity-0 group-hover:opacity-100 transition-opacity">Premium residential development with contemporary design and luxurious amenities.</p>
+<button onclick="viewProject('sonali')" class="!rounded-button bg-primary text-white px-6 py-2 mt-4 inline-flex items-center gap-2 text-sm font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">
+View Project
+<i class="ri-arrow-right-line"></i>
+</button>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<img src="https://public.readdy.ai/ai/img_res/4f4584200f67010505cb419e9d14b4fc.jpg"
+alt="Goregaon Mulund Link Road"
+class="w-full h-[500px] object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex flex-col justify-end transform translate-y-6 group-hover:translate-y-0 transition-transform">
+<h3 class="text-2xl font-bold text-white mb-2">Goregaon Mulund Link Road (GMLR)</h3>
+<p class="text-white/90 text-sm transform opacity-0 group-hover:opacity-100 transition-opacity">Major infrastructure project connecting Goregaon and Mulund, improving urban connectivity.</p>
+<button onclick="viewProject('gmlr')" class="!rounded-button bg-primary text-white px-6 py-2 mt-4 inline-flex items-center gap-2 text-sm font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">
+View Project
+<i class="ri-arrow-right-line"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div id="projectModal" class="fixed inset-0 bg-black/50 z-50 hidden">
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg w-[90vw] max-w-4xl p-6">
+<button onclick="closeProject()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+<i class="ri-close-line text-2xl"></i>
+</button>
+<div id="projectContent" class="mt-4"></div>
+</div>
+</div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const video = document.querySelector('video');
+video.play().catch(function(error) {
+console.log("Video autoplay failed:", error);
+});
+});
+const projectDetails = {
+kalpataru: {
+title: "KALPATARU Park Riviera",
+description: "A premium residential development featuring luxury apartments with riverside views. The project includes state-of-the-art amenities such as swimming pools, fitness centers, and landscaped gardens.",
+features: ["24/7 Security", "Swimming Pool", "Fitness Center", "Children's Play Area", "Landscaped Gardens"],
+specifications: ["Total Area: 10 acres", "Units: 500+", "Configuration: 2BHK, 3BHK, 4BHK", "Completion: 2025"]
+},
+sonali: {
+title: "Sonali Residential",
+description: "An exclusive residential complex offering modern living spaces with premium finishes and amenities. The project emphasizes sustainable design and community living.",
+features: ["Smart Home Features", "Club House", "Indoor Games", "Yoga Center", "Party Hall"],
+specifications: ["Total Area: 5 acres", "Units: 250+", "Configuration: 1BHK, 2BHK, 3BHK", "Completion: 2024"]
+},
+gmlr: {
+title: "Goregaon Mulund Link Road (GMLR)",
+description: "A crucial infrastructure project aimed at improving connectivity between Goregaon and Mulund. The project includes elevated roads and bridges to reduce travel time and congestion.",
+features: ["6-Lane Road", "Elevated Corridor", "Metro Integration", "Green Corridors"],
+specifications: ["Length: 12.5 km", "Width: 45m", "Bridges: 3", "Completion: 2026"]
+}
+};
+function viewProject(project) {
+const details = projectDetails[project];
+const content = `
+<h2 class="text-3xl font-bold mb-6">${details.title}</h2>
+<p class="text-gray-600 mb-6">${details.description}</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<h3 class="text-xl font-semibold mb-4">Features</h3>
+<ul class="space-y-2">
+${details.features.map(feature => `
+<li class="flex items-center gap-2">
+<i class="ri-checkbox-circle-line text-primary"></i>
+${feature}
+</li>
+`).join('')}
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-4">Specifications</h3>
+<ul class="space-y-2">
+${details.specifications.map(spec => `
+<li class="flex items-center gap-2">
+<i class="ri-information-line text-primary"></i>
+${spec}
+</li>
+`).join('')}
+</ul>
+</div>
+</div>
+`;
+document.getElementById('projectContent').innerHTML = content;
+document.getElementById('projectModal').classList.remove('hidden');
+document.body.style.overflow = 'hidden';
+}
+function closeProject() {
+document.getElementById('projectModal').classList.add('hidden');
+document.body.style.overflow = 'auto';
+}
+</script>
+</body>
+</html>
