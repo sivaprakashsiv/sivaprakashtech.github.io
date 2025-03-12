@@ -3,24 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Construction Blog - E Construct</title>
+<title>BIM Consultancy Services | Professional Building Information Modeling</title>
+<meta name="description" content="Transform your construction projects with expert BIM consultancy services. We offer 3D modeling, 4D planning, and comprehensive BIM solutions for construction excellence.">
+<meta name="keywords" content="BIM consultancy, Building Information Modeling, construction technology, 3D modeling, 4D planning, construction management">
+<meta property="og:title" content="BIM Consultancy Services | Professional Building Information Modeling">
+<meta property="og:description" content="Transform your construction projects with expert BIM consultancy services. We offer 3D modeling, 4D planning, and comprehensive BIM solutions.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.bimconsultancy.com">
 <script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-<style>
-:where([class^="ri-"])::before { content: "\f3c2"; }
-.blog-card:hover .card-overlay { opacity: 1; }
-.search-input:focus { outline: none; }
-</style>
 <script>
 tailwind.config = {
 theme: {
 extend: {
 colors: {
-primary: '#FF9800',
-secondary: '#1f2937'
+primary: '#FF7A00',
+secondary: '#FFA559'
 },
 borderRadius: {
 'none': '0px',
@@ -38,518 +36,899 @@ DEFAULT: '8px',
 }
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.gradient-bg {
+background: linear-gradient(135deg, rgba(255,122,0,0.1) 0%, rgba(255,165,89,0.1) 100%);
+}
+</style>
 </head>
 <body class="bg-white min-h-screen">
-<header class="fixed w-full bg-white shadow-sm z-50">
-<div class="container mx-auto px-4">
-<div class="flex items-center justify-between h-20">
-<div class="flex items-center gap-2">
-<div class="w-10 h-10 flex items-center justify-center text-primary">
-<i class="ri-hard-hat-fill ri-2x"></i>
+<nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100" role="navigation" aria-label="Main navigation">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20">
+<div class="flex items-center">
+<span class="text-3xl font-['Pacifico'] text-primary">logo</span>
+<div class="hidden md:flex items-center space-x-8 ml-10">
+<a href="./Blog listing page.html" class="text-gray-700 hover:text-primary">Blog listing page</a>
+<a href="./Contact-us page.html" class="text-gray-700 hover:text-primary">Contact-us</a>
+<a href="./Luxury-villa.html" class="text-gray-700 hover:text-primary">Luxury-villa</a>
+
 </div>
-<span class="font-['Pacifico'] text-2xl">E Construct</span>
 </div>
-<nav class="hidden md:flex items-center gap-8">
-<a href="#" class="text-gray-700 hover:text-primary transition-colors">Projects</a>
-<a href="#" class="text-gray-700 hover:text-primary transition-colors">Services</a>
-<a href="#" class="text-primary font-medium">Blog</a>
-<a href="#" class="text-gray-700 hover:text-primary transition-colors">About</a>
-<a href="#" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+<div class="flex items-center">
+<button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Get Started
+</button>
+</div>
+</div>
+</div>
 </nav>
-<button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer">
-Get a Quote
-</button>
-</div>
-</div>
-</header>
-<section class="pt-20 relative bg-gradient-to-r from-primary/10 to-primary/5">
-<div class="container mx-auto px-4 py-16">
-<div class="flex flex-col md:flex-row items-center gap-8">
-<div class="flex-1">
-<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-Construction Insights & Expertise
-</h1>
-<p class="text-xl text-gray-600 mb-8">
-Latest Updates from E Construct's Projects & Industry News
-</p>
-<div class="relative">
-<input type="text" placeholder="Search articles..." class="w-full px-6 py-4 pr-12 border border-gray-200 !rounded-button text-gray-700 search-input">
-<button class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary cursor-pointer">
-<i class="ri-search-line ri-lg"></i>
-</button>
-</div>
-</div>
-<div class="flex-1">
-<img src="https://public.readdy.ai/ai/img_res/d1f4c3629222b8a1216a7c3dbcfaee87.jpg"
-alt="Construction Site"
-class="w-full h-auto rounded-lg shadow-lg">
-</div>
-</div>
-</div>
-</section>
-<section class="py-16 bg-white">
-<div class="container mx-auto px-4">
-<div class="flex items-center justify-between mb-12">
-<h2 class="text-3xl font-bold text-gray-900">Featured Article</h2>
-<div class="flex gap-2">
-<button id="prevArticle" class="p-2 hover:bg-gray-100 !rounded-button cursor-pointer opacity-50" disabled>
-<i class="ri-arrow-left-s-line ri-lg"></i>
-</button>
-<button id="nextArticle" class="p-2 hover:bg-gray-100 !rounded-button cursor-pointer">
-<i class="ri-arrow-right-s-line ri-lg"></i>
-</button>
-</div>
-</div>
-<div class="grid grid-cols-1 gap-8">
-<article class="bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100">
-<div class="flex flex-col md:flex-row">
-<div class="md:w-1/2">
-<img src="https://public.readdy.ai/ai/img_res/f9dd9878a663b2b5394b09b22c883ec3.jpg"
-alt="Featured Project"
-class="w-full h-full object-cover">
-</div>
-<div class="md:w-1/2 p-8">
-<div class="flex items-center gap-4 mb-4">
-<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Commercial</span>
-<span class="text-gray-500 text-sm">March 5, 2025</span>
-</div>
-<h3 class="text-2xl font-bold text-gray-900 mb-4">
-Innovative Sustainable Design: The Future of Urban Development
-</h3>
-<p class="text-gray-600 mb-6">
-Explore how our latest commercial project incorporates cutting-edge sustainable technologies and smart building solutions, setting new standards in modern construction.
-</p>
+<section class="pt-32 pb-20 relative overflow-hidden" aria-label="Hero section">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
 <div class="flex items-center gap-6 mb-8">
+<img src="https://e-construct.in/wp-content/uploads/2021/07/not.png" alt="John Anderson - Founder and CEO of BIM Consultancy" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-lg">
 <div>
-<span class="block text-2xl font-bold text-primary">45,000</span>
-<span class="text-sm text-gray-500">Square Feet</span>
-</div>
-<div>
-<span class="block text-2xl font-bold text-primary">18</span>
-<span class="text-sm text-gray-500">Floors</span>
-</div>
-<div>
-<span class="block text-2xl font-bold text-primary">85%</span>
-<span class="text-sm text-gray-500">Complete</span>
+<h3 class="text-xl font-semibold text-gray-900">Sandeep Pingale</h3>
+<p class="text-gray-600">Founder & MD</p>
 </div>
 </div>
-<button class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors cursor-pointer">
-Read Case Study
-</button>
-</div>
-</div>
-</article>
-</div>
-</div>
-</section>
-<section class="py-16 bg-gray-50">
-<div class="container mx-auto px-4">
-<div class="flex flex-wrap items-center justify-between gap-4 mb-12">
-<h2 class="text-3xl font-bold text-gray-900">Latest Articles</h2>
-<div class="flex items-center gap-6">
-<div class="flex gap-4 overflow-x-auto pb-2">
-<button class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap cursor-pointer filter-btn" data-category="all">
-All Posts
-</button>
-<button class="bg-white text-gray-700 px-4 py-2 !rounded-button hover:bg-gray-100 whitespace-nowrap cursor-pointer filter-btn" data-category="residential">
-Residential
-</button>
-<button class="bg-white text-gray-700 px-4 py-2 !rounded-button hover:bg-gray-100 whitespace-nowrap cursor-pointer filter-btn" data-category="commercial">
-Commercial
-</button>
-<button class="bg-white text-gray-700 px-4 py-2 !rounded-button hover:bg-gray-100 whitespace-nowrap cursor-pointer filter-btn" data-category="infrastructure">
-Infrastructure
-</button>
-<button class="bg-white text-gray-700 px-4 py-2 !rounded-button hover:bg-gray-100 whitespace-nowrap cursor-pointer filter-btn" data-category="safety">
-Safety
-</button>
-</div>
-<div class="flex items-center gap-2 border border-gray-200 !rounded-button p-1">
-<button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 !rounded-button grid-view-btn active" data-view="grid">
-<i class="ri-grid-fill ri-lg"></i>
-</button>
-<button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 !rounded-button list-view-btn" data-view="list">
-<i class="ri-list-check-2"></i>
-</button>
-</div>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="articles-container">
-<article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
-<div class="relative">
-<img src="https://public.readdy.ai/ai/img_res/f9dd9878a663b2b5394b09b22c883ec3.jpg"
-alt="Residential Project"
-class="w-full h-48 object-cover">
-<div class="absolute top-4 left-4">
-<span class="bg-white text-primary px-3 py-1 rounded-full text-sm">Residential</span>
-</div>
-</div>
-<div class="p-6">
-<h3 class="text-xl font-bold text-gray-900 mb-2">
-Luxury Home Development: Crafting Modern Living Spaces
-</h3>
-<p class="text-gray-600 mb-4">
-A detailed look at our latest residential project featuring smart home integration and sustainable materials.
-</p>
-<div class="flex items-center justify-between">
-<span class="text-sm text-gray-500">March 3, 2025</span>
-<button class="text-primary hover:text-primary/80 font-medium cursor-pointer">
-Read More →
-</button>
-</div>
-</div>
-</article>
-<article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
-<div class="relative">
-<img src="https://public.readdy.ai/ai/img_res/c01b16b762c502abb8a12f1bb71e4ff0.jpg"
-alt="Safety Protocols"
-class="w-full h-48 object-cover">
-<div class="absolute top-4 left-4">
-<span class="bg-white text-primary px-3 py-1 rounded-full text-sm">Safety</span>
-</div>
-</div>
-<div class="p-6">
-<h3 class="text-xl font-bold text-gray-900 mb-2">
-Advanced Safety Protocols in Modern Construction
-</h3>
-<p class="text-gray-600 mb-4">
-Implementing cutting-edge safety measures and training programs to ensure worker protection.
-</p>
-<div class="flex items-center justify-between">
-<span class="text-sm text-gray-500">March 1, 2025</span>
-<button class="text-primary hover:text-primary/80 font-medium cursor-pointer">
-Read More →
-</button>
-</div>
-</div>
-</article>
-<article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
-<div class="relative">
-<img src="https://public.readdy.ai/ai/img_res/e47145ab8641b6c0c2c3259d466f375d.jpg"
-alt="Infrastructure Project"
-class="w-full h-48 object-cover">
-<div class="absolute top-4 left-4">
-<span class="bg-white text-primary px-3 py-1 rounded-full text-sm">Infrastructure</span>
-</div>
-</div>
-<div class="p-6">
-<h3 class="text-xl font-bold text-gray-900 mb-2">
-Urban Infrastructure: Building Tomorrow's Cities
-</h3>
-<p class="text-gray-600 mb-4">
-Exploring innovative solutions in urban infrastructure development and smart city integration.
-</p>
-<div class="flex items-center justify-between">
-<span class="text-sm text-gray-500">February 28, 2025</span>
-<button class="text-primary hover:text-primary/80 font-medium cursor-pointer">
-Read More →
-</button>
-</div>
-</div>
-</article>
-</div>
-<div class="flex justify-center mt-12">
-<button class="bg-white border border-primary text-primary px-6 py-3 !rounded-button hover:bg-primary/5 transition-colors cursor-pointer">
-Load More Articles
-</button>
-</div>
-</div>
-</section>
-<section class="py-16 bg-white">
-<div class="container mx-auto px-4">
-<div class="bg-primary/5 rounded-lg p-8 md:p-12">
-<div class="flex flex-col md:flex-row items-center gap-8">
-<div class="flex-1">
-<h2 class="text-3xl font-bold text-gray-900 mb-4">
-Subscribe to Our Newsletter
-</h2>
-<p class="text-gray-600 mb-6">
-Stay updated with the latest construction trends, project insights, and industry news.
-</p>
+<h1 class="text-5xl font-bold text-gray-900 mb-6">Transform Your Construction Projects with BIM</h1>
+<p class="text-xl text-gray-600 mb-8">Leverage cutting-edge Building Information Modeling technology to enhance collaboration, improve accuracy, and deliver projects more efficiently.</p>
 <div class="flex gap-4">
-<input type="email"
-placeholder="Enter your email"
-class="flex-1 px-6 py-3 border border-gray-200 !rounded-button text-gray-700 bg-white">
-<button class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer">
-Subscribe
+<button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Schedule Consultation
+</button>
+<button class="border border-primary text-primary px-8 py-3 !rounded-button hover:bg-primary/5 transition-colors whitespace-nowrap">
+Learn More
 </button>
 </div>
 </div>
-<div class="flex-1 flex justify-center">
-<div class="w-16 h-16 flex items-center justify-center text-primary">
-<i class="ri-mail-send-line ri-3x"></i>
+<div class="relative">
+<img src="https://public.readdy.ai/ai/img_res/85b93a0fabd73024b8e95eebfd28e0f8.jpg" alt="BIM Visualization" class="rounded-lg shadow-xl w-full object-cover">
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 gradient-bg" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+<p class="text-xl text-gray-600">Comprehensive BIM Solutions</p>
+<div class="max-w-3xl mx-auto">
+<p class="mt-4 text-gray-600">At EDBPL, we offer end-to-end Building Information Modeling (BIM) consultancy services tailored to meet the unique needs of your construction and infrastructure projects. Our expertise spans across various domains, from architectural design to facility management, ensuring a seamless digital transformation of your project lifecycle.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 mt-8">
+<span class="px-4 py-2 bg-white rounded-full text-primary border border-primary flex items-center gap-2">
+<i class="ri-cube-line"></i>3D Modeling
+</span>
+<span class="px-4 py-2 bg-white rounded-full text-primary border border-primary flex items-center gap-2">
+<i class="ri-time-line"></i>4D Scheduling
+</span>
+<span class="px-4 py-2 bg-white rounded-full text-primary border border-primary flex items-center gap-2">
+<i class="ri-money-dollar-circle-line"></i>5D Cost Analysis
+</span>
+<span class="px-4 py-2 bg-white rounded-full text-primary border border-primary flex items-center gap-2">
+<i class="ri-leaf-line"></i>6D Sustainability
+</span>
+<span class="px-4 py-2 bg-white rounded-full text-primary border border-primary flex items-center gap-2">
+<i class="ri-building-2-line"></i>7D Facility Management
+</span>
+</div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-lg mb-6">
+<i class="ri-draft-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">1D and 2D Services</h3>
+<p class="text-gray-600 mb-6">Create detailed 2D plans that fulfill regulatory submission requirements and support initial designs. Accurate 2D representations ensure compliance and reduce upfront design errors.</p>
+<button class="text-primary hover:text-primary/80 font-semibold flex items-center !rounded-button">
+Start Your 2D Plan Today <i class="ri-arrow-right-line ml-2"></i>
+</button>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-lg mb-6">
+<i class="ri-building-2-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">3D BIM Modeling</h3>
+<p class="text-gray-600 mb-6">Transform 2D blueprints into detailed 3D models that enhance visualization and team collaboration. Spot potential issues before construction begins, reducing costly errors.</p>
+<button class="text-primary hover:text-primary/80 font-semibold flex items-center !rounded-button">
+Start 3D Modeling <i class="ri-arrow-right-line ml-2"></i>
+</button>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-lg mb-6">
+<i class="ri-time-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">4D Time Planning</h3>
+<p class="text-gray-600 mb-6">Integrate project schedules with 3D models for construction sequencing and timeline optimization. Visualize construction progress and identify potential delays.</p>
+<button class="text-primary hover:text-primary/80 font-semibold flex items-center !rounded-button">
+Explore 4D Planning <i class="ri-arrow-right-line ml-2"></i>
+</button>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-lg mb-6">
+<i class="ri-money-dollar-circle-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">5D Cost Analysis</h3>
+<p class="text-gray-600 mb-6">Link cost data to BIM elements for accurate quantity takeoffs, cost estimation, and financial planning. Monitor project costs in real-time.</p>
+<button class="text-primary hover:text-primary/80 font-semibold flex items-center !rounded-button">
+Start Cost Analysis <i class="ri-arrow-right-line ml-2"></i>
+</button>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-lg mb-6">
+<i class="ri-leaf-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">6D Sustainability</h3>
+<p class="text-gray-600 mb-6">Analyze energy performance, environmental impact, and sustainable design options. Achieve green building certifications and optimize lifecycle costs.</p>
+<button class="text-primary hover:text-primary/80 font-semibold flex items-center !rounded-button">
+Explore Green BIM <i class="ri-arrow-right-line ml-2"></i>
+</button>
+</div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mt-8">
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-lg mb-6">
+<i class="ri-building-2-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">7D Facility Management</h3>
+<p class="text-gray-600 mb-6">Integrate operations and maintenance data for efficient facility management. Track assets, schedule maintenance, and optimize building performance.</p>
+<button class="text-primary hover:text-primary/80 font-semibold flex items-center !rounded-button">
+Explore FM Solutions <i class="ri-arrow-right-line ml-2"></i>
+</button>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-lg mb-6">
+<i class="ri-shield-check-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">8D Safety</h3>
+<p class="text-gray-600 mb-6">Incorporate safety planning and risk assessment into BIM models. Identify hazards, plan safety measures, and ensure regulatory compliance.</p>
+<button class="text-primary hover:text-primary/80 font-semibold flex items-center !rounded-button">
+Enhance Safety <i class="ri-arrow-right-line ml-2"></i>
+</button>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-lg mb-6">
+<i class="ri-recycle-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">9D Lean Construction</h3>
+<p class="text-gray-600 mb-6">Optimize construction processes, reduce waste, and improve efficiency using lean principles integrated with BIM methodology.</p>
+<button class="text-primary hover:text-primary/80 font-semibold flex items-center !rounded-button">
+Start Lean Journey <i class="ri-arrow-right-line ml-2"></i>
+</button>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-lg mb-6">
+<i class="ri-robot-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">10D Industrialization</h3>
+<p class="text-gray-600 mb-6">Implement industrial construction methods, modularization, and automation through advanced BIM integration and digital fabrication.</p>
+<button class="text-primary hover:text-primary/80 font-semibold flex items-center !rounded-button">
+Explore Innovation <i class="ri-arrow-right-line ml-2"></i>
+</button>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-lg mb-6">
+<i class="ri-focus-3-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">BIM Strategy</h3>
+<p class="text-gray-600 mb-6">Define your project's goals and align BIM implementation with organizational objectives. Our strategic planning maximizes ROI and enables smoother execution.</p>
+<button class="text-primary hover:text-primary/80 font-semibold flex items-center !rounded-button">
+Develop Strategy <i class="ri-arrow-right-line ml-2"></i>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white" id="how-it-works">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">How It Works</h2>
+<p class="text-xl text-gray-600">Our Streamlined BIM Implementation Process</p>
+</div>
+<div class="relative">
+<div class="absolute left-0 right-0 h-1 top-1/2 bg-gray-200"></div>
+<div class="grid md:grid-cols-4 gap-8 relative">
+<div class="bg-white p-8 rounded-lg shadow-lg text-center relative">
+<div class="w-16 h-16 flex items-center justify-center bg-primary text-white rounded-full mx-auto mb-6 relative z-10">
+<span class="text-2xl font-bold">1</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Initial Consultation</h3>
+<p class="text-gray-600">We assess your project requirements and develop a tailored BIM strategy.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg text-center relative">
+<div class="w-16 h-16 flex items-center justify-center bg-primary text-white rounded-full mx-auto mb-6 relative z-10">
+<span class="text-2xl font-bold">2</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Planning & Setup</h3>
+<p class="text-gray-600">Our team establishes BIM protocols and configures necessary tools.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg text-center relative">
+<div class="w-16 h-16 flex items-center justify-center bg-primary text-white rounded-full mx-auto mb-6 relative z-10">
+<span class="text-2xl font-bold">3</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Implementation</h3>
+<p class="text-gray-600">We execute the BIM strategy while providing continuous support.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg text-center relative">
+<div class="w-16 h-16 flex items-center justify-center bg-primary text-white rounded-full mx-auto mb-6 relative z-10">
+<span class="text-2xl font-bold">4</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Optimization</h3>
+<p class="text-gray-600">Regular reviews ensure optimal performance and ROI achievement.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 gradient-bg" id="why-choose-us">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
+<p class="text-xl text-gray-600">Industry Leaders in BIM Innovation</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-orange-100 rounded-full mb-6">
+<i class="ri-team-line text-primary text-3xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Expert Team</h3>
+<p class="text-gray-600">Our certified BIM professionals bring 15+ years of industry experience to every project.</p>
+<ul class="mt-4 space-y-2">
+<li class="flex items-center text-gray-600">
+<i class="ri-check-line text-primary mr-2"></i>
+Certified Professionals
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-check-line text-primary mr-2"></i>
+Continuous Training
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-check-line text-primary mr-2"></i>
+Industry Expertise
+</li>
+</ul>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-orange-100 rounded-full mb-6">
+<i class="ri-tools-line text-primary text-3xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Advanced Technology</h3>
+<p class="text-gray-600">We utilize the latest BIM software and tools to deliver superior results.</p>
+<ul class="mt-4 space-y-2">
+<li class="flex items-center text-gray-600">
+<i class="ri-check-line text-primary mr-2"></i>
+Latest Software
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-check-line text-primary mr-2"></i>
+Cloud Integration
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-check-line text-primary mr-2"></i>
+Real-time Collaboration
+</li>
+</ul>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-orange-100 rounded-full mb-6">
+<i class="ri-customer-service-2-line text-primary text-3xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Dedicated Support</h3>
+<p class="text-gray-600">24/7 support and consultation throughout your project lifecycle.</p>
+<ul class="mt-4 space-y-2">
+<li class="flex items-center text-gray-600">
+<i class="ri-check-line text-primary mr-2"></i>
+24/7 Availability
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-check-line text-primary mr-2"></i>
+Quick Response Time
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-check-line text-primary mr-2"></i>
+Personalized Service
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white" id="stats">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-8 text-center">
+<div class="p-6">
+<div class="text-4xl font-bold text-primary mb-2">500+</div>
+<div class="text-xl text-gray-600">Projects Completed</div>
+</div>
+<div class="p-6">
+<div class="text-4xl font-bold text-primary mb-2">50M+</div>
+<div class="text-xl text-gray-600">Square Feet Modeled</div>
+</div>
+<div class="p-6">
+<div class="text-4xl font-bold text-primary mb-2">98%</div>
+<div class="text-xl text-gray-600">Client Satisfaction</div>
+</div>
+<div class="p-6">
+<div class="text-4xl font-bold text-primary mb-2">15+</div>
+<div class="text-xl text-gray-600">Years Experience</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20" id="projects">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+<p class="text-xl text-gray-600">Discover how we've helped clients achieve success with BIM</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+<div class="relative group overflow-hidden rounded-lg">
+<img src="https://public.readdy.ai/ai/img_res/49427b3609a78cd2419cb964dfc15801.jpg" alt="Healthcare Project" class="w-full h-[200px] object-cover transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<p class="text-white font-semibold">Healthcare Center</p>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg">
+<img src="https://public.readdy.ai/ai/img_res/81e417c887a9821247fa0196c43b4b3f.jpg" alt="Education Project" class="w-full h-[200px] object-cover transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<p class="text-white font-semibold">Education Campus</p>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg">
+<img src="https://public.readdy.ai/ai/img_res/3d3e6dfbf42dc9d491d78eb8b15d8710.jpg" alt="Retail Project" class="w-full h-[200px] object-cover transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<p class="text-white font-semibold">Retail Complex</p>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg">
+<img src="https://public.readdy.ai/ai/img_res/468b3d1f637e6735a19a81e66827d160.jpg" alt="Transport Project" class="w-full h-[200px] object-cover transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<p class="text-white font-semibold">Transport Hub</p>
+</div>
+</div>
+</div>
+<div class="flex justify-center gap-4 mb-16">
+<button class="px-6 py-2 !rounded-button bg-primary text-white hover:bg-primary/90 active" data-filter="all">All Projects</button>
+<button class="px-6 py-2 !rounded-button bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="commercial">Commercial</button>
+<button class="px-6 py-2 !rounded-button bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="residential">Residential</button>
+<button class="px-6 py-2 !rounded-button bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="infrastructure">Infrastructure</button>
+</div>
+<div class="grid md:grid-cols-3 gap-8" id="project-grid">
+<div class="group relative rounded-lg overflow-hidden cursor-pointer project-item" data-category="commercial" onclick="openProjectModal(0)">
+<img src="https://public.readdy.ai/ai/img_res/f8d0817820eb0eba0e5b98bf3aedda0d.jpg" alt="Commercial Project" class="w-full h-[300px] object-cover transition-transform group-hover:scale-105">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+<div>
+<h3 class="text-xl font-bold text-white mb-2">Commercial Complex</h3>
+<p class="text-gray-200">Dubai, UAE</p>
+</div>
+</div>
+</div>
+<div class="group relative rounded-lg overflow-hidden cursor-pointer project-item" data-category="residential" onclick="openProjectModal(1)">
+<img src="https://public.readdy.ai/ai/img_res/40850cdc0d348104fe09d132df2e3527.jpg" alt="Residential Project" class="w-full h-[300px] object-cover transition-transform group-hover:scale-105">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+<div>
+<h3 class="text-xl font-bold text-white mb-2">Residential Tower</h3>
+<p class="text-gray-200">Singapore</p>
+</div>
+</div>
+</div>
+<div class="group relative rounded-lg overflow-hidden cursor-pointer project-item" data-category="infrastructure" onclick="openProjectModal(2)">
+<img src="https://public.readdy.ai/ai/img_res/00be9a2a88403bbe74c0f4877348f501.jpg" alt="Infrastructure Project" class="w-full h-[300px] object-cover transition-transform group-hover:scale-105">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+<div>
+<h3 class="text-xl font-bold text-white mb-2">Bridge Project</h3>
+<p class="text-gray-200">Hong Kong</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Modal -->
+<div id="project-modal" class="fixed inset-0 bg-black/50 z-50 hidden">
+<div class="fixed inset-0 flex items-center justify-center p-4">
+<div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+<div class="relative">
+<button onclick="closeProjectModal()" class="absolute right-4 top-4 text-gray-500 hover:text-gray-700">
+<i class="ri-close-line text-2xl"></i>
+</button>
+<div class="p-6">
+<div id="modal-content">
+<!-- Content will be dynamically inserted here -->
+</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<footer class="bg-gray-900 text-white py-16">
-<div class="container mx-auto px-4">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<section class="py-20 gradient-bg" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 gap-12">
 <div>
-<div class="flex items-center gap-2 mb-6">
-<div class="w-10 h-10 flex items-center justify-center text-primary">
-<i class="ri-hard-hat-fill ri-2x"></i>
-</div>
-<span class="font-['Pacifico'] text-2xl">E Construct</span>
-</div>
-<p class="text-gray-400 mb-6">
-Leading the way in innovative construction solutions and sustainable building practices.
-</p>
-<div class="flex gap-4">
-<a href="#" class="text-gray-400 hover:text-primary transition-colors cursor-pointer">
-<i class="ri-facebook-fill ri-lg"></i>
-</a>
-<a href="#" class="text-gray-400 hover:text-primary transition-colors cursor-pointer">
-<i class="ri-twitter-fill ri-lg"></i>
-</a>
-<a href="#" class="text-gray-400 hover:text-primary transition-colors cursor-pointer">
-<i class="ri-linkedin-fill ri-lg"></i>
-</a>
-<a href="#" class="text-gray-400 hover:text-primary transition-colors cursor-pointer">
-<i class="ri-instagram-fill ri-lg"></i>
-</a>
-</div>
+<h2 class="text-4xl font-bold text-gray-900 mb-6">Let's Discuss Your Project</h2>
+<p class="text-xl text-gray-600 mb-8">Schedule a consultation with our BIM experts to explore how we can help transform your construction projects.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-lg">
+<i class="ri-phone-line text-primary text-2xl"></i>
 </div>
 <div>
-<h3 class="text-lg font-bold mb-6">Quick Links</h3>
-<ul class="space-y-4">
-<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">About Us</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Our Projects</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Services</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+<p class="text-gray-600">Call us</p>
+<p class="text-lg font-semibold">+91 9036744017</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-lg">
+<i class="ri-mail-line text-primary text-2xl"></i>
+</div>
+<div>
+<p class="text-gray-600">Email us</p>
+<p class="text-lg font-semibold">info@e-construct.org</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<form class="space-y-6" role="form" aria-label="Contact form">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+<input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" placeholder="Your name">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+<input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" placeholder="Your email">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+<textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" rows="4" placeholder="Tell us about your project"></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Send Message
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white" id="team">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Our Expert Team</h2>
+<p class="text-xl text-gray-600">Meet the professionals behind our success</p>
+</div>
+<div class="grid md:grid-cols-4 gap-8" itemscope itemtype="http://schema.org/Person">
+<div class="text-center">
+<div class="relative mb-6 inline-block">
+<img src="https://public.readdy.ai/ai/img_res/928a14f09999228c68cbfdd8547a534a.jpg" alt="CEO" class="w-48 h-48 rounded-full object-cover mx-auto">
+<div class="absolute bottom-0 right-0 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center">
+<i class="ri-linkedin-fill text-xl"></i>
+</div>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Michael Chen</h3>
+<p class="text-primary font-medium mb-2">CEO & Founder</p>
+<p class="text-gray-600">20+ years experience in BIM implementation and strategic planning</p>
+</div>
+<div class="text-center">
+<div class="relative mb-6 inline-block">
+<img src="https://public.readdy.ai/ai/img_res/caca910a2fdf85302b5fd6c8ed8f0f6f.jpg" alt="Technical Director" class="w-48 h-48 rounded-full object-cover mx-auto">
+<div class="absolute bottom-0 right-0 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center">
+<i class="ri-linkedin-fill text-xl"></i>
+</div>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Sarah Johnson</h3>
+<p class="text-primary font-medium mb-2">Technical Director</p>
+<p class="text-gray-600">Expert in advanced BIM modeling and technical coordination</p>
+</div>
+<div class="text-center">
+<div class="relative mb-6 inline-block">
+<img src="https://public.readdy.ai/ai/img_res/0c534f9e6935f453835f16593c32def1.jpg" alt="Project Manager" class="w-48 h-48 rounded-full object-cover mx-auto">
+<div class="absolute bottom-0 right-0 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center">
+<i class="ri-linkedin-fill text-xl"></i>
+</div>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">David Martinez</h3>
+<p class="text-primary font-medium mb-2">Project Manager</p>
+<p class="text-gray-600">Specialized in large-scale infrastructure BIM projects</p>
+</div>
+<div class="text-center">
+<div class="relative mb-6 inline-block">
+<img src="https://public.readdy.ai/ai/img_res/480c0f878c7690e4bdb61a797f0aa517.jpg" alt="BIM Coordinator" class="w-48 h-48 rounded-full object-cover mx-auto">
+<div class="absolute bottom-0 right-0 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center">
+<i class="ri-linkedin-fill text-xl"></i>
+</div>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Emily Zhang</h3>
+<p class="text-primary font-medium mb-2">BIM Coordinator</p>
+<p class="text-gray-600">Expert in clash detection and construction coordination</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 gradient-bg" id="testimonials">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Client Testimonials</h2>
+<p class="text-xl text-gray-600">What our clients say about our services</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="flex items-center gap-4 mb-6">
+<img src="https://public.readdy.ai/ai/img_res/7353b75563f841d22a64f565aea4e289.jpg" alt="Client 1" class="w-16 h-16 rounded-full object-cover">
+<div>
+<h3 class="text-lg font-semibold text-gray-900">Robert Thompson</h3>
+<p class="text-gray-600">Project Director, ABC Construction</p>
+</div>
+</div>
+<div class="flex mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-600">"Their BIM expertise significantly reduced our project timeline and costs. The team's professional approach and attention to detail were exceptional."</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="flex items-center gap-4 mb-6">
+<img src="https://public.readdy.ai/ai/img_res/8e46f4b4bf6f71ec72eff108a507adc9.jpg" alt="Client 2" class="w-16 h-16 rounded-full object-cover">
+<div>
+<h3 class="text-lg font-semibold text-gray-900">Jennifer Lee</h3>
+<p class="text-gray-600">Principal Architect, XYZ Architects</p>
+</div>
+</div>
+<div class="flex mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-half-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-600">"The team's innovative approach to BIM implementation helped us achieve LEED certification while maintaining our design vision."</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="flex items-center gap-4 mb-6">
+<img src="https://public.readdy.ai/ai/img_res/c371455ca3c8b098ea663b4e79a49a2f.jpg" alt="Client 3" class="w-16 h-16 rounded-full object-cover">
+<div>
+<h3 class="text-lg font-semibold text-gray-900">Marcus Rodriguez</h3>
+<p class="text-gray-600">Facility Manager, DEF Properties</p>
+</div>
+</div>
+<div class="flex mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-600">"Their facility management BIM solutions have revolutionized how we maintain our properties. The ROI has been remarkable."</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white" id="faq">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+<p class="text-xl text-gray-600">Find answers to common questions about our BIM services</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="space-y-6">
+<div class="bg-white p-6 rounded-lg shadow-lg cursor-pointer faq-item">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-gray-900">What is BIM and why do I need it?</h3>
+<i class="ri-add-line text-2xl text-primary transition-transform"></i>
+</div>
+<div class="mt-4 text-gray-600 hidden faq-answer">
+Building Information Modeling (BIM) is a digital representation of physical and functional characteristics of a facility. It's essential for modern construction projects as it improves collaboration, reduces errors, saves costs, and enables better project visualization and management.
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-lg cursor-pointer faq-item">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-gray-900">How long does BIM implementation take?</h3>
+<i class="ri-add-line text-2xl text-primary transition-transform"></i>
+</div>
+<div class="mt-4 text-gray-600 hidden faq-answer">
+Implementation timeline varies based on project scope and complexity. Typically, basic implementation takes 2-3 months, while full enterprise-wide implementation may take 6-12 months. We provide a detailed timeline during initial consultation.
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-lg cursor-pointer faq-item">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-gray-900">What software do you use for BIM?</h3>
+<i class="ri-add-line text-2xl text-primary transition-transform"></i>
+</div>
+<div class="mt-4 text-gray-600 hidden faq-answer">
+We utilize industry-leading software including Autodesk Revit, Navisworks, and BIM 360. Our team is proficient in multiple platforms and can adapt to your preferred software environment.
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="bg-white p-6 rounded-lg shadow-lg cursor-pointer faq-item">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-gray-900">What training do you provide?</h3>
+<i class="ri-add-line text-2xl text-primary transition-transform"></i>
+</div>
+<div class="mt-4 text-gray-600 hidden faq-answer">
+We offer comprehensive training programs including basic BIM concepts, software usage, and advanced modeling techniques. Training can be customized to your team's needs and skill level.
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-lg cursor-pointer faq-item">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-gray-900">What support do you offer after implementation?</h3>
+<i class="ri-add-line text-2xl text-primary transition-transform"></i>
+</div>
+<div class="mt-4 text-gray-600 hidden faq-answer">
+We provide ongoing technical support, regular check-ins, and maintenance services. Our team is available 24/7 to address any issues and ensure smooth operation of your BIM systems.
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-lg cursor-pointer faq-item">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-gray-900">How do you ensure data security?</h3>
+<i class="ri-add-line text-2xl text-primary transition-transform"></i>
+</div>
+<div class="mt-4 text-gray-600 hidden faq-answer">
+We implement robust security measures including encrypted data storage, secure access controls, and regular backups. All our processes comply with industry standards and regulations for data protection.
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-gray-900 text-white py-12" role="contentinfo">
+<div itemscope itemtype="http://schema.org/Organization">
+<meta itemprop="name" content="BIM Consultancy">
+<meta itemprop="description" content="Professional Building Information Modeling services for construction excellence">
+<meta itemprop="url" content="https://www.bimconsultancy.com">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-8" itemscope itemtype="http://schema.org/Person">
+<div>
+<span class="text-3xl font-['Pacifico'] text-white mb-4 block">logo</span>
+<p class="text-gray-400">Transform your construction projects with our expert BIM consultancy services.</p>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Services</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white">3D Modeling</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">4D Planning</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">5D Estimation</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">BIM Consulting</a></li>
 </ul>
 </div>
 <div>
-<h3 class="text-lg font-bold mb-6">Services</h3>
-<ul class="space-y-4">
-<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Commercial Construction</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Residential Projects</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Infrastructure Development</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Renovation Services</a></li>
+<h4 class="text-lg font-semibold mb-4">Company</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Projects</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
 </ul>
 </div>
 <div>
-<h3 class="text-lg font-bold mb-6">Contact Info</h3>
-<ul class="space-y-4">
-<li class="flex items-center gap-3">
-<i class="ri-map-pin-line"></i>
-<span class="text-gray-400">123 Construction Ave, Building City, ST 12345</span>
-</li>
-<li class="flex items-center gap-3">
-<i class="ri-phone-line"></i>
-<span class="text-gray-400">(555) 123-4567</span>
-</li>
-<li class="flex items-center gap-3">
-<i class="ri-mail-line"></i>
-<span class="text-gray-400">info@econstruct.com</span>
-</li>
-</ul>
+<h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+<div class="flex space-x-4">
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="ri-linkedin-fill text-2xl"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="ri-twitter-fill text-2xl"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="ri-facebook-fill text-2xl"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="ri-instagram-fill text-2xl"></i>
+</a>
 </div>
 </div>
-<div class="border-t border-gray-800 mt-12 pt-8">
-<div class="flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-gray-400">
-© 2025 E Construct. All rights reserved.
-</p>
-<div class="flex gap-6">
-<a href="#" class="text-gray-400 hover:text-primary transition-colors">Privacy Policy</a>
-<a href="#" class="text-gray-400 hover:text-primary transition-colors">Terms of Service</a>
 </div>
-</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+<p>&copy; 2025 BIM Consultancy. All rights reserved.</p>
 </div>
 </div>
 </footer>
 <script>
-const featuredArticles = [
+const projectsData = [
 {
-image: "https://readdy.ai/api/search-image?query=modern skyscraper under construction with glass facade, professional architectural photography, dramatic angle, construction progress&width=600&height=400&seq=2&orientation=landscape",
-category: "Commercial",
-date: "March 5, 2025",
-title: "Innovative Sustainable Design: The Future of Urban Development",
-description: "Explore how our latest commercial project incorporates cutting-edge sustainable technologies and smart building solutions, setting new standards in modern construction.",
-stats: {
-squareFeet: "45,000",
-floors: "18",
-complete: "85%"
-}
+title: "Commercial Complex",
+location: "Dubai, UAE",
+category: "commercial",
+description: "A state-of-the-art commercial complex featuring advanced BIM implementation throughout the design and construction phases. This project showcases our expertise in handling complex architectural requirements while maintaining efficiency and accuracy.",
+details: {
+size: "150,000 sq ft",
+duration: "24 months",
+value: "$180M",
+services: ["3D BIM Modeling", "4D Construction Sequencing", "5D Cost Estimation", "Clash Detection"],
+challenges: ["Complex MEP Systems", "Tight Urban Site", "Multiple Stakeholder Coordination"],
+results: ["30% reduction in RFIs", "25% faster construction", "15% cost savings"]
+},
+images: [
+"https://public.readdy.ai/ai/img_res/122b2c2bf713e8abdd0d57f9aa33c1e6.jpg",
+"https://public.readdy.ai/ai/img_res/f89374a42db94be0c216b0b6cf6e568d.jpg",
+"https://public.readdy.ai/ai/img_res/4177a73b859626358bfc63376cdb6531.jpg"
+]
 },
 {
-image: "https://public.readdy.ai/ai/img_res/53dfe91582763767e461a4749d16486c.jpg",
-category: "Commercial",
-date: "March 4, 2025",
-title: "Eco-Friendly Office Complex: Setting New Standards",
-description: "Discover our latest eco-friendly office complex that combines sustainable materials with cutting-edge design to create a workspace of the future.",
-stats: {
-squareFeet: "60,000",
-floors: "22",
-complete: "65%"
-}
+title: "Residential Tower",
+location: "Singapore",
+category: "residential",
+description: "A luxury residential tower that demonstrates our capability in creating detailed BIM models for high-rise construction. The project involved comprehensive clash detection and construction sequencing.",
+details: {
+size: "45 floors",
+duration: "36 months",
+value: "$250M",
+services: ["BIM Coordination", "Virtual Design Construction", "Asset Information Modeling", "Facility Management"],
+challenges: ["Height Restrictions", "Wind Load Analysis", "Sustainable Design Requirements"],
+results: ["40% fewer on-site conflicts", "20% material waste reduction", "LEED Platinum certification"]
+},
+images: [
+"https://public.readdy.ai/ai/img_res/7c0078c54f63a6b504688d113c4fe567.jpg",
+"https://public.readdy.ai/ai/img_res/b0c52ff3de0fa51e36d8aba7e1bed6c3.jpg",
+"https://public.readdy.ai/ai/img_res/31b806b4e4edf0b4fef2a06b775cf3d1.jpg"
+]
 },
 {
-image: "https://public.readdy.ai/ai/img_res/184db10b40bb7ef270658fd673e46eb2.jpg",
-category: "Commercial",
-date: "March 3, 2025",
-title: "Luxury Hotel Development: Redefining Hospitality",
-description: "Take a look at our ambitious hotel project that blends luxury amenities with sustainable practices to create an unforgettable guest experience.",
-stats: {
-squareFeet: "75,000",
-floors: "25",
-complete: "40%"
-}
+title: "Bridge Project",
+location: "Hong Kong",
+category: "infrastructure",
+description: "An innovative infrastructure project showcasing our expertise in complex structural BIM modeling and analysis. This bridge project demonstrates our ability to handle large-scale infrastructure developments.",
+details: {
+size: "2.5 km length",
+duration: "48 months",
+value: "$400M",
+services: ["Infrastructure BIM", "Structural Analysis", "Construction Simulation", "Environmental Impact Assessment"],
+challenges: ["Water Body Crossing", "Seismic Considerations", "Heavy Traffic Integration"],
+results: ["50% faster design iterations", "35% better cost prediction", "Zero safety incidents"]
+},
+images: [
+"https://public.readdy.ai/ai/img_res/310dddd5d17678228b463288b4ba7581.jpg",
+"https://public.readdy.ai/ai/img_res/2373759339bcd105096376ba0eda78d2.jpg",
+"https://public.readdy.ai/ai/img_res/87b27e9701e0615ac9cf3093ac9a1c94.jpg"
+]
 }
 ];
-let currentArticleIndex = 0;
-function updateFeaturedArticle(index) {
-const article = featuredArticles[index];
-const featuredSection = document.querySelector('article.bg-white.rounded-lg');
-featuredSection.style.opacity = '0';
-featuredSection.style.transform = 'translateX(20px)';
-setTimeout(() => {
-featuredSection.querySelector('img').src = article.image;
-featuredSection.querySelector('.bg-primary\\/10').textContent = article.category;
-featuredSection.querySelector('.text-gray-500.text-sm').textContent = article.date;
-featuredSection.querySelector('.text-2xl.font-bold').textContent = article.title;
-featuredSection.querySelector('.text-gray-600.mb-6').textContent = article.description;
-const stats = featuredSection.querySelectorAll('.text-2xl.font-bold.text-primary');
-stats[0].textContent = article.stats.squareFeet;
-stats[1].textContent = article.stats.floors;
-stats[2].textContent = article.stats.complete;
-featuredSection.style.opacity = '1';
-featuredSection.style.transform = 'translateX(0)';
-}, 300);
-}
 document.addEventListener('DOMContentLoaded', function() {
-const prevBtn = document.getElementById('prevArticle');
-const nextBtn = document.getElementById('nextArticle');
-const featuredSection = document.querySelector('article.bg-white.rounded-lg');
-featuredSection.style.transition = 'all 0.3s ease-in-out';
-prevBtn.addEventListener('click', () => {
-if (currentArticleIndex > 0) {
-currentArticleIndex--;
-updateFeaturedArticle(currentArticleIndex);
-nextBtn.disabled = false;
-nextBtn.classList.remove('opacity-50');
-if (currentArticleIndex === 0) {
-prevBtn.disabled = true;
-prevBtn.classList.add('opacity-50');
-}
-}
-});
-nextBtn.addEventListener('click', () => {
-if (currentArticleIndex < featuredArticles.length - 1) {
-currentArticleIndex++;
-updateFeaturedArticle(currentArticleIndex);
-prevBtn.disabled = false;
-prevBtn.classList.remove('opacity-50');
-if (currentArticleIndex === featuredArticles.length - 1) {
-nextBtn.disabled = true;
-nextBtn.classList.add('opacity-50');
-}
-}
-});
-const articlesContainer = document.getElementById('articles-container');
-const gridViewBtn = document.querySelector('.grid-view-btn');
-const listViewBtn = document.querySelector('.list-view-btn');
-function setActiveView(viewType) {
-if (viewType === 'grid') {
-articlesContainer.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8';
-gridViewBtn.classList.add('bg-gray-100');
-listViewBtn.classList.remove('bg-gray-100');
-} else {
-articlesContainer.className = 'grid grid-cols-1 gap-8';
-listViewBtn.classList.add('bg-gray-100');
-gridViewBtn.classList.remove('bg-gray-100');
-}
-}
-gridViewBtn.addEventListener('click', () => setActiveView('grid'));
-listViewBtn.addEventListener('click', () => setActiveView('list'));
-const filterButtons = document.querySelectorAll('.filter-btn');
-const articles = document.querySelectorAll('#articles-container article');
-
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    // Reset all buttons
-    filterButtons.forEach(btn => {
-      btn.classList.remove('bg-primary', 'text-white');
-      btn.classList.add('bg-white', 'text-gray-700');
-    });
-    
-    // Set active button
-    button.classList.remove('bg-white', 'text-gray-700');
-    button.classList.add('bg-primary', 'text-white');
-    
-    const category = button.dataset.category.toLowerCase();
-    
-    // Filter articles with animation
-    let hasArticles = false;
-    articles.forEach(article => {
-      const articleCategory = article.querySelector('.bg-white.text-primary').textContent.toLowerCase();
-      article.style.transition = 'all 0.3s ease-out';
-      
-      if (category === 'all' || articleCategory === category) {
-        article.style.opacity = '0';
-        article.style.transform = 'translateY(20px)';
-        article.style.display = 'block';
-        hasArticles = true;
-        
-        setTimeout(() => {
-          article.style.opacity = '1';
-          article.style.transform = 'translateY(0)';
-        }, 50);
-      } else {
-        article.style.opacity = '0';
-        article.style.transform = 'translateY(20px)';
-        
-        setTimeout(() => {
-          article.style.display = 'none';
-        }, 300);
-      }
-    });
-    
-    // Show/hide no articles message
-    const noArticlesMsg = document.getElementById('no-articles-msg');
-    if (!hasArticles) {
-      if (!noArticlesMsg) {
-        const msg = document.createElement('div');
-        msg.id = 'no-articles-msg';
-        msg.className = 'text-center py-12 text-gray-500';
-        msg.innerHTML = `No ${category} articles found`;
-        document.getElementById('articles-container').appendChild(msg);
-      }
-    } else if (noArticlesMsg) {
-      noArticlesMsg.remove();
-    }
-  });
-});
-
-const loadMoreBtn = document.querySelector('button:contains("Load More")');
-if (loadMoreBtn) {
-loadMoreBtn.addEventListener('click', function() {
-const notification = document.createElement('div');
-notification.className = 'fixed bottom-4 right-4 bg-primary text-white px-6 py-3 rounded-lg shadow-lg';
-notification.textContent = 'Loading more articles...';
-document.body.appendChild(notification);
-setTimeout(() => {
-notification.remove();
-}, 2000);
-});
-}
-const subscribeForm = document.querySelector('input[type="email"]').parentElement;
-subscribeForm.addEventListener('submit', function(e) {
+const form = document.querySelector('form');
+form.addEventListener('submit', function(e) {
 e.preventDefault();
-const email = subscribeForm.querySelector('input[type="email"]').value;
-if (email) {
-const notification = document.createElement('div');
-notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg';
-notification.textContent = 'Thank you for subscribing!';
-document.body.appendChild(notification);
-setTimeout(() => {
-notification.remove();
-}, 2000);
+const formData = new FormData(form);
+console.log('Form submitted:', Object.fromEntries(formData));
+form.reset();
+});
+const faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach(item => {
+item.addEventListener('click', function() {
+const answer = this.querySelector('.faq-answer');
+const icon = this.querySelector('.ri-add-line');
+const isOpen = answer.classList.contains('!block');
+document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('!block'));
+document.querySelectorAll('.ri-add-line').forEach(i => {
+i.classList.remove('rotate-45');
+i.classList.remove('text-primary');
+});
+if (!isOpen) {
+answer.classList.add('!block');
+icon.classList.add('rotate-45', 'text-primary');
 }
 });
+});
+const filterButtons = document.querySelectorAll('[data-filter]');
+filterButtons.forEach(button => {
+button.addEventListener('click', function() {
+const filter = this.dataset.filter;
+filterProjects(filter);
+filterButtons.forEach(btn => {
+btn.classList.remove('bg-primary', 'text-white');
+btn.classList.add('bg-gray-200', 'text-gray-700');
+});
+this.classList.remove('bg-gray-200', 'text-gray-700');
+this.classList.add('bg-primary', 'text-white');
+});
+});
+});
+function filterProjects(category) {
+const projects = document.querySelectorAll('.project-item');
+projects.forEach(project => {
+if (category === 'all' || project.dataset.category === category) {
+project.style.display = 'block';
+} else {
+project.style.display = 'none';
+}
+});
+}
+function openProjectModal(index) {
+const project = projectsData[index];
+const modal = document.getElementById('project-modal');
+const content = document.getElementById('modal-content');
+content.innerHTML = `
+<div class="space-y-6">
+<div class="relative h-[400px] overflow-hidden rounded-lg">
+<div class="flex transition-transform duration-500" id="image-slider">
+${project.images.map(img => `
+<img src="${img}" alt="${project.title}" class="w-full h-[400px] object-cover flex-shrink-0">
+`).join('')}
+</div>
+<div class="absolute bottom-4 right-4 flex gap-2">
+${project.images.map((_, i) => `
+<button onclick="changeSlide(${i})" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 slider-dot ${i === 0 ? 'bg-white' : ''}"></button>
+`).join('')}
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h2 class="text-3xl font-bold text-gray-900">${project.title}</h2>
+<p class="text-xl text-gray-600">${project.location}</p>
+</div>
+<div class="text-right">
+<p class="text-sm text-gray-600">Project Value</p>
+<p class="text-xl font-bold text-primary">${project.details.value}</p>
+</div>
+</div>
+<p class="text-gray-600">${project.description}</p>
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Project Details</h3>
+<div class="space-y-2">
+<p><span class="font-semibold">Size:</span> ${project.details.size}</p>
+<p><span class="font-semibold">Duration:</span> ${project.details.duration}</p>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Services Provided</h3>
+<ul class="list-disc list-inside space-y-1">
+${project.details.services.map(service => `<li class="text-gray-600">${service}</li>`).join('')}
+</ul>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Challenges</h3>
+<ul class="list-disc list-inside space-y-1">
+${project.details.challenges.map(challenge => `<li class="text-gray-600">${challenge}</li>`).join('')}
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Results</h3>
+<ul class="list-disc list-inside space-y-1">
+${project.details.results.map(result => `<li class="text-gray-600">${result}</li>`).join('')}
+</ul>
+</div>
+</div>
+</div>
+`;
+modal.classList.remove('hidden');
+document.body.style.overflow = 'hidden';
+}
+function closeProjectModal() {
+const modal = document.getElementById('project-modal');
+modal.classList.add('hidden');
+document.body.style.overflow = 'auto';
+}
+function changeSlide(index) {
+const slider = document.getElementById('image-slider');
+const dots = document.querySelectorAll('.slider-dot');
+slider.style.transform = `translateX(-${index * 100}%)`;
+dots.forEach((dot, i) => {
+if (i === index) {
+dot.classList.add('bg-white');
+dot.classList.remove('bg-white/50');
+} else {
+dot.classList.remove('bg-white');
+dot.classList.add('bg-white/50');
+}
+});
+}
+document.getElementById('project-modal').addEventListener('click', function(e) {
+if (e.target === this) {
+closeProjectModal();
+}
 });
 </script>
 </body>
