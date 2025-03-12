@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Construction Blog - E Construct</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.blog-card:hover .card-overlay { opacity: 1; }
+.search-input:focus { outline: none; }
+</style>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#FF9800',
+secondary: '#1f2937'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+</head>
+<body class="bg-white min-h-screen">
+<header class="fixed w-full bg-white shadow-sm z-50">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 flex items-center justify-center text-primary">
+<i class="ri-hard-hat-fill ri-2x"></i>
+</div>
+<span class="font-['Pacifico'] text-2xl">E Construct</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a href="./BIM-CONSULTANCY.html" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+</nav>
+<button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer">
+Get a Quote
+</button>
+</div>
+</div>
+</header>
+<section class="pt-20 relative bg-gradient-to-r from-primary/10 to-primary/5">
+<div class="container mx-auto px-4 py-16">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1">
+<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+Construction Insights & Expertise
+</h1>
+<p class="text-xl text-gray-600 mb-8">
+Latest Updates from E Construct's Projects & Industry News
+</p>
+<div class="relative">
+<input type="text" placeholder="Search articles..." class="w-full px-6 py-4 pr-12 border border-gray-200 !rounded-button text-gray-700 search-input">
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary cursor-pointer">
+<i class="ri-search-line ri-lg"></i>
+</button>
+</div>
+</div>
+<div class="flex-1">
+<img src="https://public.readdy.ai/ai/img_res/d1f4c3629222b8a1216a7c3dbcfaee87.jpg"
+alt="Construction Site"
+class="w-full h-auto rounded-lg shadow-lg">
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between mb-12">
+<h2 class="text-3xl font-bold text-gray-900">Featured Article</h2>
+<div class="flex gap-2">
+<button id="prevArticle" class="p-2 hover:bg-gray-100 !rounded-button cursor-pointer opacity-50" disabled>
+<i class="ri-arrow-left-s-line ri-lg"></i>
+</button>
+<button id="nextArticle" class="p-2 hover:bg-gray-100 !rounded-button cursor-pointer">
+<i class="ri-arrow-right-s-line ri-lg"></i>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-8">
+<article class="bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100">
+<div class="flex flex-col md:flex-row">
+<div class="md:w-1/2">
+<img src="https://public.readdy.ai/ai/img_res/f9dd9878a663b2b5394b09b22c883ec3.jpg"
+alt="Featured Project"
+class="w-full h-full object-cover">
+</div>
+<div class="md:w-1/2 p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Commercial</span>
+<span class="text-gray-500 text-sm">March 5, 2025</span>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">
+Innovative Sustainable Design: The Future of Urban Development
+</h3>
+<p class="text-gray-600 mb-6">
+Explore how our latest commercial project incorporates cutting-edge sustainable technologies and smart building solutions, setting new standards in modern construction.
+</p>
+<div class="flex items-center gap-6 mb-8">
+<div>
+<span class="block text-2xl font-bold text-primary">45,000</span>
+<span class="text-sm text-gray-500">Square Feet</span>
+</div>
+<div>
+<span class="block text-2xl font-bold text-primary">18</span>
+<span class="text-sm text-gray-500">Floors</span>
+</div>
+<div>
+<span class="block text-2xl font-bold text-primary">85%</span>
+<span class="text-sm text-gray-500">Complete</span>
+</div>
+</div>
+<button class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors cursor-pointer">
+Read Case Study
+</button>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="flex flex-wrap items-center justify-between gap-4 mb-12">
+<h2 class="text-3xl font-bold text-gray-900">Latest Articles</h2>
+<div class="flex items-center gap-6">
+<div class="flex gap-4 overflow-x-auto pb-2">
+<button class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap cursor-pointer filter-btn" data-category="all">
+All Posts
+</button>
+<button class="bg-white text-gray-700 px-4 py-2 !rounded-button hover:bg-gray-100 whitespace-nowrap cursor-pointer filter-btn" data-category="residential">
+Residential
+</button>
+<button class="bg-white text-gray-700 px-4 py-2 !rounded-button hover:bg-gray-100 whitespace-nowrap cursor-pointer filter-btn" data-category="commercial">
+Commercial
+</button>
+<button class="bg-white text-gray-700 px-4 py-2 !rounded-button hover:bg-gray-100 whitespace-nowrap cursor-pointer filter-btn" data-category="infrastructure">
+Infrastructure
+</button>
+<button class="bg-white text-gray-700 px-4 py-2 !rounded-button hover:bg-gray-100 whitespace-nowrap cursor-pointer filter-btn" data-category="safety">
+Safety
+</button>
+</div>
+<div class="flex items-center gap-2 border border-gray-200 !rounded-button p-1">
+<button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 !rounded-button grid-view-btn active" data-view="grid">
+<i class="ri-grid-fill ri-lg"></i>
+</button>
+<button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 !rounded-button list-view-btn" data-view="list">
+<i class="ri-list-check-2"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="articles-container">
+<article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+<div class="relative">
+<img src="https://public.readdy.ai/ai/img_res/f9dd9878a663b2b5394b09b22c883ec3.jpg"
+alt="Residential Project"
+class="w-full h-48 object-cover">
+<div class="absolute top-4 left-4">
+<span class="bg-white text-primary px-3 py-1 rounded-full text-sm">Residential</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-2">
+Luxury Home Development: Crafting Modern Living Spaces
+</h3>
+<p class="text-gray-600 mb-4">
+A detailed look at our latest residential project featuring smart home integration and sustainable materials.
+</p>
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-500">March 3, 2025</span>
+<button class="text-primary hover:text-primary/80 font-medium cursor-pointer">
+Read More →
+</button>
+</div>
+</div>
+</article>
+<article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+<div class="relative">
+<img src="https://public.readdy.ai/ai/img_res/c01b16b762c502abb8a12f1bb71e4ff0.jpg"
+alt="Safety Protocols"
+class="w-full h-48 object-cover">
+<div class="absolute top-4 left-4">
+<span class="bg-white text-primary px-3 py-1 rounded-full text-sm">Safety</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-2">
+Advanced Safety Protocols in Modern Construction
+</h3>
+<p class="text-gray-600 mb-4">
+Implementing cutting-edge safety measures and training programs to ensure worker protection.
+</p>
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-500">March 1, 2025</span>
+<button class="text-primary hover:text-primary/80 font-medium cursor-pointer">
+Read More →
+</button>
+</div>
+</div>
+</article>
+<article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+<div class="relative">
+<img src="https://public.readdy.ai/ai/img_res/e47145ab8641b6c0c2c3259d466f375d.jpg"
+alt="Infrastructure Project"
+class="w-full h-48 object-cover">
+<div class="absolute top-4 left-4">
+<span class="bg-white text-primary px-3 py-1 rounded-full text-sm">Infrastructure</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-2">
+Urban Infrastructure: Building Tomorrow's Cities
+</h3>
+<p class="text-gray-600 mb-4">
+Exploring innovative solutions in urban infrastructure development and smart city integration.
+</p>
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-500">February 28, 2025</span>
+<button class="text-primary hover:text-primary/80 font-medium cursor-pointer">
+Read More →
+</button>
+</div>
+</div>
+</article>
+</div>
+<div class="flex justify-center mt-12">
+<button class="bg-white border border-primary text-primary px-6 py-3 !rounded-button hover:bg-primary/5 transition-colors cursor-pointer">
+Load More Articles
+</button>
+</div>
+</div>
+</section>
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="bg-primary/5 rounded-lg p-8 md:p-12">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">
+Subscribe to Our Newsletter
+</h2>
+<p class="text-gray-600 mb-6">
+Stay updated with the latest construction trends, project insights, and industry news.
+</p>
+<div class="flex gap-4">
+<input type="email"
+placeholder="Enter your email"
+class="flex-1 px-6 py-3 border border-gray-200 !rounded-button text-gray-700 bg-white">
+<button class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer">
+Subscribe
+</button>
+</div>
+</div>
+<div class="flex-1 flex justify-center">
+<div class="w-16 h-16 flex items-center justify-center text-primary">
+<i class="ri-mail-send-line ri-3x"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-gray-900 text-white py-16">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<div>
+<div class="flex items-center gap-2 mb-6">
+<div class="w-10 h-10 flex items-center justify-center text-primary">
+<i class="ri-hard-hat-fill ri-2x"></i>
+</div>
+<span class="font-['Pacifico'] text-2xl">E Construct</span>
+</div>
+<p class="text-gray-400 mb-6">
+Leading the way in innovative construction solutions and sustainable building practices.
+</p>
+<div class="flex gap-4">
+<a href="#" class="text-gray-400 hover:text-primary transition-colors cursor-pointer">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-primary transition-colors cursor-pointer">
+<i class="ri-twitter-fill ri-lg"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-primary transition-colors cursor-pointer">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-primary transition-colors cursor-pointer">
+<i class="ri-instagram-fill ri-lg"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">Quick Links</h3>
+<ul class="space-y-4">
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Our Projects</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Services</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">Services</h3>
+<ul class="space-y-4">
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Commercial Construction</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Residential Projects</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Infrastructure Development</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Renovation Services</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">Contact Info</h3>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<i class="ri-map-pin-line"></i>
+<span class="text-gray-400">123 Construction Ave, Building City, ST 12345</span>
+</li>
+<li class="flex items-center gap-3">
+<i class="ri-phone-line"></i>
+<span class="text-gray-400">(555) 123-4567</span>
+</li>
+<li class="flex items-center gap-3">
+<i class="ri-mail-line"></i>
+<span class="text-gray-400">info@econstruct.com</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-gray-400">
+© 2025 E Construct. All rights reserved.
+</p>
+<div class="flex gap-6">
+<a href="#" class="text-gray-400 hover:text-primary transition-colors">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-primary transition-colors">Terms of Service</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+const featuredArticles = [
+{
+image: "https://readdy.ai/api/search-image?query=modern skyscraper under construction with glass facade, professional architectural photography, dramatic angle, construction progress&width=600&height=400&seq=2&orientation=landscape",
+category: "Commercial",
+date: "March 5, 2025",
+title: "Innovative Sustainable Design: The Future of Urban Development",
+description: "Explore how our latest commercial project incorporates cutting-edge sustainable technologies and smart building solutions, setting new standards in modern construction.",
+stats: {
+squareFeet: "45,000",
+floors: "18",
+complete: "85%"
+}
+},
+{
+image: "https://public.readdy.ai/ai/img_res/53dfe91582763767e461a4749d16486c.jpg",
+category: "Commercial",
+date: "March 4, 2025",
+title: "Eco-Friendly Office Complex: Setting New Standards",
+description: "Discover our latest eco-friendly office complex that combines sustainable materials with cutting-edge design to create a workspace of the future.",
+stats: {
+squareFeet: "60,000",
+floors: "22",
+complete: "65%"
+}
+},
+{
+image: "https://public.readdy.ai/ai/img_res/184db10b40bb7ef270658fd673e46eb2.jpg",
+category: "Commercial",
+date: "March 3, 2025",
+title: "Luxury Hotel Development: Redefining Hospitality",
+description: "Take a look at our ambitious hotel project that blends luxury amenities with sustainable practices to create an unforgettable guest experience.",
+stats: {
+squareFeet: "75,000",
+floors: "25",
+complete: "40%"
+}
+}
+];
+let currentArticleIndex = 0;
+function updateFeaturedArticle(index) {
+const article = featuredArticles[index];
+const featuredSection = document.querySelector('article.bg-white.rounded-lg');
+featuredSection.style.opacity = '0';
+featuredSection.style.transform = 'translateX(20px)';
+setTimeout(() => {
+featuredSection.querySelector('img').src = article.image;
+featuredSection.querySelector('.bg-primary\\/10').textContent = article.category;
+featuredSection.querySelector('.text-gray-500.text-sm').textContent = article.date;
+featuredSection.querySelector('.text-2xl.font-bold').textContent = article.title;
+featuredSection.querySelector('.text-gray-600.mb-6').textContent = article.description;
+const stats = featuredSection.querySelectorAll('.text-2xl.font-bold.text-primary');
+stats[0].textContent = article.stats.squareFeet;
+stats[1].textContent = article.stats.floors;
+stats[2].textContent = article.stats.complete;
+featuredSection.style.opacity = '1';
+featuredSection.style.transform = 'translateX(0)';
+}, 300);
+}
+document.addEventListener('DOMContentLoaded', function() {
+const prevBtn = document.getElementById('prevArticle');
+const nextBtn = document.getElementById('nextArticle');
+const featuredSection = document.querySelector('article.bg-white.rounded-lg');
+featuredSection.style.transition = 'all 0.3s ease-in-out';
+prevBtn.addEventListener('click', () => {
+if (currentArticleIndex > 0) {
+currentArticleIndex--;
+updateFeaturedArticle(currentArticleIndex);
+nextBtn.disabled = false;
+nextBtn.classList.remove('opacity-50');
+if (currentArticleIndex === 0) {
+prevBtn.disabled = true;
+prevBtn.classList.add('opacity-50');
+}
+}
+});
+nextBtn.addEventListener('click', () => {
+if (currentArticleIndex < featuredArticles.length - 1) {
+currentArticleIndex++;
+updateFeaturedArticle(currentArticleIndex);
+prevBtn.disabled = false;
+prevBtn.classList.remove('opacity-50');
+if (currentArticleIndex === featuredArticles.length - 1) {
+nextBtn.disabled = true;
+nextBtn.classList.add('opacity-50');
+}
+}
+});
+const articlesContainer = document.getElementById('articles-container');
+const gridViewBtn = document.querySelector('.grid-view-btn');
+const listViewBtn = document.querySelector('.list-view-btn');
+function setActiveView(viewType) {
+if (viewType === 'grid') {
+articlesContainer.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8';
+gridViewBtn.classList.add('bg-gray-100');
+listViewBtn.classList.remove('bg-gray-100');
+} else {
+articlesContainer.className = 'grid grid-cols-1 gap-8';
+listViewBtn.classList.add('bg-gray-100');
+gridViewBtn.classList.remove('bg-gray-100');
+}
+}
+gridViewBtn.addEventListener('click', () => setActiveView('grid'));
+listViewBtn.addEventListener('click', () => setActiveView('list'));
+const filterButtons = document.querySelectorAll('.filter-btn');
+const articles = document.querySelectorAll('#articles-container article');
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Reset all buttons
+    filterButtons.forEach(btn => {
+      btn.classList.remove('bg-primary', 'text-white');
+      btn.classList.add('bg-white', 'text-gray-700');
+    });
+    
+    // Set active button
+    button.classList.remove('bg-white', 'text-gray-700');
+    button.classList.add('bg-primary', 'text-white');
+    
+    const category = button.dataset.category.toLowerCase();
+    
+    // Filter articles with animation
+    let hasArticles = false;
+    articles.forEach(article => {
+      const articleCategory = article.querySelector('.bg-white.text-primary').textContent.toLowerCase();
+      article.style.transition = 'all 0.3s ease-out';
+      
+      if (category === 'all' || articleCategory === category) {
+        article.style.opacity = '0';
+        article.style.transform = 'translateY(20px)';
+        article.style.display = 'block';
+        hasArticles = true;
+        
+        setTimeout(() => {
+          article.style.opacity = '1';
+          article.style.transform = 'translateY(0)';
+        }, 50);
+      } else {
+        article.style.opacity = '0';
+        article.style.transform = 'translateY(20px)';
+        
+        setTimeout(() => {
+          article.style.display = 'none';
+        }, 300);
+      }
+    });
+    
+    // Show/hide no articles message
+    const noArticlesMsg = document.getElementById('no-articles-msg');
+    if (!hasArticles) {
+      if (!noArticlesMsg) {
+        const msg = document.createElement('div');
+        msg.id = 'no-articles-msg';
+        msg.className = 'text-center py-12 text-gray-500';
+        msg.innerHTML = `No ${category} articles found`;
+        document.getElementById('articles-container').appendChild(msg);
+      }
+    } else if (noArticlesMsg) {
+      noArticlesMsg.remove();
+    }
+  });
+});
+
+const loadMoreBtn = document.querySelector('button:contains("Load More")');
+if (loadMoreBtn) {
+loadMoreBtn.addEventListener('click', function() {
+const notification = document.createElement('div');
+notification.className = 'fixed bottom-4 right-4 bg-primary text-white px-6 py-3 rounded-lg shadow-lg';
+notification.textContent = 'Loading more articles...';
+document.body.appendChild(notification);
+setTimeout(() => {
+notification.remove();
+}, 2000);
+});
+}
+const subscribeForm = document.querySelector('input[type="email"]').parentElement;
+subscribeForm.addEventListener('submit', function(e) {
+e.preventDefault();
+const email = subscribeForm.querySelector('input[type="email"]').value;
+if (email) {
+const notification = document.createElement('div');
+notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg';
+notification.textContent = 'Thank you for subscribing!';
+document.body.appendChild(notification);
+setTimeout(() => {
+notification.remove();
+}, 2000);
+}
+});
+});
+</script>
+</body>
+</html>
